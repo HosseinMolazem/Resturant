@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+#App-Background {
+    background-image: url(../src/img/img_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#Background-Menu {
+    background-image: url(./img/img_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* menu hambergery */
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 26px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: white;
+}
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+
+/* Finish menu-hambergury */
