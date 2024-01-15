@@ -1,32 +1,40 @@
 import React, { useState } from "react";
 import Swal from 'sweetalert2'
 import img from "../img/img_1.jpg";
-import { MdDarkMode } from "react-icons/md";
+import { IoIosHome } from "react-icons/io";
 import { NavLink, useNavigate } from "react-router-dom";
 import Search from "./Search";
+import useContexts from "../Hocks/useContexts";
+
 export default  function MenuResepiLists () {
-
-  window.addEventListener('load',()=>{
-
-    Swal.fire({
-      text: 'برای دیدن منو های مورد نظر سرچ کنید :)',
-      confirmButtonText: 'OK'
-    })
-
-  })
+  
   const [datas, SetData] = useState("pizza");
   const navigat = useNavigate();
   const handlSearch = async () => {
     await navigat(`/ResepiMenu?q=${datas}`);
   };
+
    Search()
+
+
+
+
+   const {changeColor,color}=useContexts();
+   console.log(color.mode);
+
+
+
   return (
-    <div className="w-screen h-screen bg-black  flex  flex-col items-center  ">
+    <div className={`w-screen h-screen  bg-black   flex  flex-col items-center `}>
       {/* header */}
       <div className="w-screen h-fit      relative  px-4 mt-10  max-sm:mt-5   max-sm:h-fit  text-white    flex justify-between items-center max-sm:flex-col max-sm:justify-center max-sm:items-center  ">
         <div className="w-2/3 h-fit   flex justify-end max-sm:justify-center max-sm:mt-4 ">
-          <i className="absolute cursor-pointer left-0 top-7 text-2xl max-sm:top-4 ml-3">
-            <MdDarkMode />
+          <i className="absolute cursor-pointer left-0 top-4 text-2xl max-sm:top-6 ml-3 flex w-20  justify-around">
+           <IoIosHome  onClick={()=>{
+
+navigat('/Resturant')
+
+            }} />
           </i>
 
           <h1 className="font-bold text-5xl mr-16 max-sm:text-2xl max-sm:mr-0">
