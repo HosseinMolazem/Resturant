@@ -8,7 +8,7 @@
 
 
 ***
-# [instagram](https://www.instagram.com/debugger._/)
+# [instagram](https://www.instagram.com/debugger__p?igsh=emoxYzhjcnN1a2x6)
 #  [Telegram](https://t.me/Debugger0)
 
 ***
